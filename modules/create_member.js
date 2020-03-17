@@ -15,7 +15,15 @@ const createMember = async (name, avatar_template) => {
   const json = await response.json();
 
   const country = json.user.user_fields[2];
-  const iso = getCode(country).toLowerCase();
+
+  let iso;
+
+  // brexit workaround 
+  if (country === 'United Kingdom') {
+    iso = 'gb'
+  } else {
+    iso = getCode(country).toLowerCase();
+  }
 
   for (let i = 0; i < json.user_badges.length; i++) {
     if (json.user_badges[i].badge_id === 102) {
