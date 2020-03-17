@@ -1,0 +1,29 @@
+{
+  "name": "afoo-frontend-static",
+  "version": "1.0.0",
+  "description": "AFOO Static Frontend Page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+  },
+  "author": "Michael Ackermann",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "country-list": "^2.1.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.3.1",
+    "mysql2": "^1.6.5",
+    "node-fetch": "^2.3.0",
+    "popper.js": "^1.14.7",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
+  }
+}

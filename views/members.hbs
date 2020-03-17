@@ -1,0 +1,28 @@
+<div id="members">
+
+    {{#each members}}
+        {{! assign badge color and text}}
+        {{assign 'badge' this.badge}}
+
+        {{! don't render if row empty}}
+        {{#unless (isRowEmpty this.rows)}}
+            {{! don't render hr on first section}}
+            {{#unless this.isAdmin}}
+                <hr class="large-hr"/>
+            {{/unless}}
+
+            {{#each this.rows}}
+                {{! assign column size for boostrap}}
+                {{assign 'column' (colSize this)}}
+
+                <div class="row mx-auto mt-5 mb-5 text-center">
+                    {{#each this}}
+                        {{> member}}
+                    {{/each}}
+                </div>
+
+            {{/each}}
+        {{/unless}}
+    {{/each}}
+
+</div>

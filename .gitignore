@@ -1,0 +1,4 @@
+node_modules
+.idea
+public/images/*
+!public/images/afoo_logo_final.svg

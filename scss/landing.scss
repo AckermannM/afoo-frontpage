@@ -1,0 +1,55 @@
+body, html, main {
+  height: 100%;
+}
+
+//LANDING PAGE
+.bg-landing {
+  background-color: #15191e;
+}
+
+.navbar-toggler {
+  margin: 10px 0;
+}
+
+main {
+  margin-top: -60px;
+  background: #1a1f26;
+  background-size: 100% auto;
+  display: table;
+}
+
+//niggerfix
+main:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  background: inherit;
+}
+
+#logo {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#vcenter {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+.desc-text {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.typed-cursor {
+  display: inline;
+  color: #fff;
+  font-size: 34px;
+  background-color: white;
+}

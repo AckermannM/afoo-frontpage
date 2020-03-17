@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-4 mb-5">
+        <div class="list-group">
+            <a href="/servers/ts3" class="list-group-item {{#if page.ts3}}active{{/if}}">Teamspeak 3</a>
+            <a class="list-group-item disabled">Under construction!</a>
+        </div>
+    </div>
+    <div class="col-md-8 text-center">
+        {{#if page.ts3}}
+            {{> tsviewer}}
+        {{/if}}
+    </div>
+</div>

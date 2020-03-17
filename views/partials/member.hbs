@@ -1,0 +1,19 @@
+<div class="col-lg-{{@root.column}}">
+    <a class="btn btn-light d-inline-block py-4 my-2" href="https://hub.afo-odin.com/u/{{this.lowercase_name}}">
+        <img alt="member-avatar" src="https://hub.afo-odin.com{{this.avatar_template}}"/>
+        <h3 class="mt-4">{{this.name}}</h3>
+        <h5>
+            <span class="badge badge-{{@root.badge.color}}">{{@root.badge.name}}</span>
+            {{#if this.founder}}
+                <span class="badge badge-warning">Founder</span>
+            {{/if}}
+            {{#if this.backer}}
+                <i class="fas fa-dollar-sign text-success h6" data-toggle="tooltip" title="Continuous Backer" data-placement="bottom"></i>
+            {{/if}}
+        </h5>
+        <h5 class="m-0 font-weight-normal">
+            <img alt="country-flag" class="mr-1" src="https://www.countryflags.io/{{this.country.iso}}/flat/32.png">
+            {{~this.country.name~}}
+        </h5>
+    </a>
+</div>

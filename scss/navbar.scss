@@ -1,0 +1,73 @@
+$headerColor: #222222;
+$activeHue: rgba(255, 255, 255, .15);
+@mixin smoothTransition($bg-color) {
+  -webkit-transition-property: $bg-color;
+  transition-property: $bg-color;
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+header {
+  p {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 70% !important;
+    padding: 0;
+
+    @media (max-width: 1360px) {
+      max-width: 90% !important;
+    }
+  }
+}
+
+.navbar {
+  padding: 0;
+  p {
+    line-height: 60px;
+    float: left;
+  }
+
+  img {
+    height: 44px;
+    margin: 8px 0;
+    float: left;
+  }
+
+  .active {
+    background-color: $activeHue;
+  }
+}
+
+.bg-custom {
+  background: $headerColor;
+  box-shadow: 0 0 10px #000;
+}
+
+.nav-link {
+  line-height: 60px;
+  text-transform: uppercase;
+  padding: 0 25px !important;
+
+  //stay white whatever state
+  color: #fff !important;
+
+  &:hover {
+    background-color: $activeHue !important;
+    color: #fff !important;
+    @include smoothTransition(background-color);
+  }
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}

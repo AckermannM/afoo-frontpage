@@ -1,0 +1,23 @@
+<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggle">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarToggle">
+    <ul class="navbar-nav ml-auto mt-2 mt-xl-0  mt-md-0">
+        <li class="nav-item">
+            <a class="nav-link {{#if page.about}}active{{/if}}" href="/about">about</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{#if page.servers}}active{{/if}}" href="/servers">servers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link {{#if page.members}}active{{/if}}" href="/members">members</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  {{#if page.application}}active{{/if}}" href="/application">join</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://hub.afo-odin.com/">community hub</a>
+        </li>
+    </ul>
+</div>

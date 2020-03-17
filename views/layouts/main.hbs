@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{> head}}
+
+        <title>Advanced Force Operations Odin - {{page.name}}</title>
+
+        <!-- Custom CSS -->
+        <link href="/css/navbar.css" rel="stylesheet">
+        <link href="/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Common Navigation -->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark bg-custom">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img alt="odin-logo" src="/images/afoo_logo_final.svg"/>
+                        <p class="d-none d-sm-block">Advanced Force Operations Odin</p>
+                    </a>
+                    {{> navbar_nav}}
+                </div>
+            </nav>
+        </header>
+
+        <!-- Dynamic Content -->
+        <main>
+            <div class="content">
+                <div class="container">
+                    {{{body}}}
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer for all sites-->
+        <div class="footer">
+            <img src="/images/afoo_logo_final.svg"/>
+            <p><a href="/imprint">Imprint</a> | <a href="https://hub.afo-odin.com/privacy">Privacy</a></p>
+            <p>© {{copyrightYear}} Advanced Force Operations Odin - All rights reserved.</p>
+        </div>
+
+        <!-- BootstrapCDN JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="/js/tooltips.js"></script>
+    </body>
+</html>

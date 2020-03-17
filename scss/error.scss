@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100%;
+  display: table;
+  font-family: sans-serif;
+  background: #333;
+  color: #fff;
+  margin: 0 !important;
+}
+
+.centered {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100vh;
+}
+
+#logo {
+  height: 300px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p, b {
+  font-size: 1.5em;
+}
